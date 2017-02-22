@@ -2,13 +2,13 @@
 /**
  * Portfolio Projects Module Handler
  *
- * @package   Ajskelton\PortfolioProjects
+ * @package   Ajskelton\ProjectsPortfolio
  * @since     1.0.0
  * @author    ajskelton
  * @link      anthonyskelton.com
  * @license   GNU General Public License 2.0+
  */
-namespace Ajskelton\PortfolioProjects;
+namespace Ajskelton\ProjectsPortfolio\Projects;
 
 /**
  * Autoload plugin files
@@ -40,8 +40,8 @@ register_activation_hook( PROJECTS_PORTFOLIO_PLUGIN, __NAMESPACE__ . '\activate_
  * @return void
  */
 function activate_the_plugin() {
-	Custom\register_faq_custom_post_type();
-//	Custom\register_custom_taxonomies();
+	Custom\register_project_custom_post_type();
+	Custom\register_custom_taxonomies();
 
 	flush_rewrite_rules();
 }

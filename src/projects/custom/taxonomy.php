@@ -8,7 +8,7 @@
  * @link      anthonyskelton.com
  * @license   GNU General Public License 2.0+
  */
-namespace Ajskelton\ProjectsPortfolio\Custom;
+namespace Ajskelton\ProjectsPortfolio\Projects\Custom;
 
 add_action( 'init', __NAMESPACE__ . '\register_custom_taxonomies', 0 );
 /**

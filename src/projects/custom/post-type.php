@@ -8,9 +8,9 @@
  * @link      anthonyskelton.com
  * @license   GNU General Public License 2.0+
  */
-namespace Ajskelton\ProjectsPortfolio\Custom;
+namespace Ajskelton\ProjectsPortfolio\Projects\Custom;
 
-add_action( 'init', __NAMESPACE__ . '\register_projects_custom_post_type' );
+add_action( 'init', __NAMESPACE__ . '\register_project_custom_post_type' );
 /**
  * Register the custom post type
  *
@@ -18,7 +18,7 @@ add_action( 'init', __NAMESPACE__ . '\register_projects_custom_post_type' );
  *
  * @return void
  */
-function register_projects_custom_post_type() {
+function register_project_custom_post_type() {
 
 	$features = get_all_post_type_features( 'post', array(
 		'comments',
