@@ -1,38 +1,38 @@
 <?php
 /**
- * Portfolio Projects Plugin
+ * Projects Portfolio Plugin
  *
- * @package   Ajskelton\PortfolioProjects
+ * @package   Ajskelton\ProjectsPortfolio
  * @since     1.0.0
  * @author    ajskelton
  * @link      anthonyskelton.com
  * @license   GNU General Public License 2.0+
  *
  * @wordpress-plugin
- * Plugin Name: Portfolio Projects Plugin
+ * Plugin Name: Projects Portfolio Plugin
  * Plugin URI: _
  * Description: A WordPress Plugin to display a portfolio of projects
  * Version: 1.0.0
  * Author: ajskelton
  * Author URI: https://anthonyskelton.com
- * Text Domain: portfolio-projects
+ * Text Domain: projects-portfolio
  * Requires WP: 4.7
  * Requires PHP: 5.5
  *
  */
-namespace Ajskelton\PortfolioProjects;
+namespace Ajskelton\ProjectsPortfolio;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit( "Oh, silly, there's nothing to see here." );
 }
 
-define( 'PORTFOLIO_PROJECTS_PLUGIN', __FILE__ );
-define( 'PORTFOLIO_PROJECTS_DIR', plugin_dir_path( __FILE__ ) );
+define( 'PROJECTS_PORTFOLIO_PLUGIN', __FILE__ );
+define( 'PROJECTS_PORTFOLIO_DIR', plugin_dir_path( __FILE__ ) );
 $plugin_url = plugin_dir_url( __FILE__ );
 if( is_ssl() ) {
 	$plugin_url = str_replace( 'http://', 'https://', $plugin_url );
 }
-define( 'PORTFOLIO_PROJECTS_URL', $plugin_url );
-define( 'PORTFOLIO_PROJECTS_TEXT_DOMAIN', 'portfolio-projects' );
+define( 'PROJECTS_PORTFOLIO_URL', $plugin_url );
+define( 'PROJECTS_PORTFOLIO_TEXT_DOMAIN', 'projects-portfolio' );
 
 include( __DIR__ . '/src/plugin.php' );

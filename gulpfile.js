@@ -1,7 +1,7 @@
 /**
  * gulfile.js - Entry point for launching Plugin
  *
- * @package     PortfolioProjects
+ * @package     Ajskelton\ProjectsPortfolio
  * @since       1.0.0
  * @author      Anthony Skelton
  * @link        https://anthonyskelton.com
