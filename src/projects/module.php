@@ -2,13 +2,16 @@
 /**
  * Portfolio Projects Module Handler
  *
- * @package   Ajskelton\ProjectsPortfolio
+ * @package   Ajskelton\ProjectsPortfolio\Projects
  * @since     1.0.0
  * @author    ajskelton
  * @link      anthonyskelton.com
  * @license   GNU General Public License 2.0+
  */
 namespace Ajskelton\ProjectsPortfolio\Projects;
+
+define( 'PROJECTS_MODULE_TEXT_DOMAIN', PROJECTS_PORTFOLIO_TEXT_DOMAIN );
+define( 'PROJECTS_MODULE_DIR', __DIR__ );
 
 /**
  * Autoload plugin files
@@ -21,6 +24,8 @@ function autoload() {
 	$files = array(
 		'custom/post-type.php',
 		'custom/taxonomy.php',
+		'shortcode/shortcode.php',
+		'template/helpers.php',
 	);
 
 	foreach ( $files as $file ) {
