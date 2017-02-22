@@ -20,7 +20,7 @@ namespace Ajskelton\PortfolioProjects;
 function autoload() {
 	$files = array(
 		'custom/post-type.php',
-//		'custom/taxonomy.php',
+		'custom/taxonomy.php',
 	);
 
 	foreach ( $files as $file ) {
